@@ -28,15 +28,8 @@ Available states
 Configures logging in the KAR way: Installs cronolog, and creates symlinks to re-route
 logs to a shared nas volume
 
-``jbossapache.mod_cluster_configuration``
+``karapache.auditor_happiness``
 ------------
 
-Configures the web server mod_cluster module with the ip addresses of the app servers
+Does some additional configuration to the apache server to keep auditors happy
 
-``jbossapache.mod_cluster_module``
-------------
-
-This should be run on all apache servers in the cluster. It should not be run on the 
-jboss server unless it is also acting as an apache server.
-Copies the mod_cluster apache module files to the httpd server modules directory
-Creates a conf.d file to load the modules
