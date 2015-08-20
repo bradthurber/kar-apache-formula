@@ -22,12 +22,12 @@ base_logging_config:
   file.managed:
     - group: root
     - mode: 644
-    - name: {{ apache.confdir }}/baselogging.conf
+    - name: {{ apache.confdir }}/base_logging.conf
     - require:
       - pkg: apache
-    - source: salt://karapache/files/baselogging.conf.jinja
+    - source: salt://karapache/files/base_logging.conf.jinja
     - template: jinja
     - watch_in:
-      - service: apache
+      - module: apache-restart
     - user: root      
     
