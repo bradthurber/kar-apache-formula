@@ -1,0 +1,3 @@
+ErrorLog "|cronolog -l logs/base/error.log /logs/base/error.%Y-%m-%d.log"
+LogFormat "%h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\"" combined
+CustomLog "|cronolog -l logs/base/access.log logs/base/access.%Y-%m-%d.log" combined
