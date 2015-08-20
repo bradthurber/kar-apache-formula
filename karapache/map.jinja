@@ -4,4 +4,4 @@
         'mod_status_ExtendedStatus': 'Off',
         'TraceEnable': 'Off'
     },
-}, merge=salt['pillar.get']('karapache:lookup')) %}
+}, merge=salt['pillar.get']('karapache:lookup'), default='default') %}
