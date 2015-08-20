@@ -1,0 +1,7 @@
+{% set karapache = salt['grains.filter_by']({
+    'default': {
+        'mod_status_allow_list': 127.0.0.1,
+        'mod_status_ExtendedStatus': Off,
+        'TraceEnable': Off
+    },
+}, merge=salt['pillar.get']('karapache:lookup')) %}
