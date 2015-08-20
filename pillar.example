@@ -1,4 +1,9 @@
 karapache:
-  'mod_status_allow_list': '127.0.0.1'
-  'mod_status_ExtendedStatus': 'Off'
-  'TraceEnable': 'Off'
+  # to overwrite map.jinja karapache packages
+  lookup:
+    # set custom allow_list for mod_status
+    'mod_status_allow_list': '172.21. 172.27'
+    # turn on extended mod_status status info
+    'mod_status_ExtendedStatus': 'On'
+    # enable tracing
+    'TraceEnable': 'On'
