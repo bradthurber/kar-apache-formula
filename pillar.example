@@ -1,0 +1,4 @@
+karapache:
+  'mod_status_allow_list': '127.0.0.1'
+  'mod_status_ExtendedStatus': 'Off'
+  'TraceEnable': 'Off'

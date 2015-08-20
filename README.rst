@@ -22,14 +22,16 @@ Available states
 .. contents::
     :local:
 
+``karapache.auditor_happiness``
+------------
+
+Does some additional configuration to the apache server to keep auditors happy
+
 ``karapache.config_logging``
 ------------
 
 Configures logging in the KAR way: Installs cronolog, and creates symlinks to re-route
 logs to a shared nas volume
 
-``karapache.auditor_happiness``
-------------
 
-Does some additional configuration to the apache server to keep auditors happy
 
