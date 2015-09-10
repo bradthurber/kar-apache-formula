@@ -6,9 +6,6 @@ A pseudo-salt formula that extends the public salt apache formula
 https://github.com/saltstack-formulas/apache-formula with pieces
 that are KAR specific.
 
-At the moment, this pseudo-formula has no map.jina and no init.sls instead
-relying on the extended apache formula
-
 .. note::
 
     See the full `Salt Formulas installation and usage instructions
